@@ -11,7 +11,7 @@ const projects = [
     client: "KOLON SPORT「K:」- TDS",
     sector: "Outdoor / Performance",
     scope: "Creative Direction",
-    year: "2026",
+    year: "2026-27",
     detail: "A modular product system balancing weather protection with lightweight construction and movement.",
     image: "kolon-ss26.jpg",
   },
