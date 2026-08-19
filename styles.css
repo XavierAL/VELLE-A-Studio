@@ -29,6 +29,7 @@ nav a:hover { color:#111; }
 
 .index-header,.index-row { display:grid; grid-template-columns:1.55fr 1fr 1.7fr .32fr; column-gap:18px; align-items:center; }
 .index-header { height:42px; color:#8b8b87; text-transform:uppercase; font-size:9px; border-bottom:1px solid var(--line); }
+.index-header span:last-child { text-align:right; }
 .index-row { width:100%; min-height:70px; padding:0; border:0; border-bottom:1px solid var(--line); background:#fff; text-align:left; cursor:pointer; transition:background .18s ease; }
 .index-row:hover,.index-row:focus-visible { background:#f5f5f3; outline:none; }
 .index-row .client { font-size:19px; font-weight:600; letter-spacing:-.025em; }
@@ -52,7 +53,7 @@ figcaption { margin-top:7px; color:#777; font:10px "Courier New",monospace; }
 .studio-copy { width:min(560px,100%); }
 .studio-copy p { margin:0 0 14px; font-size:17px; line-height:1.4; letter-spacing:-.015em; }
 .studio-image { margin:32px 0 0; }
-.studio-image img { height:720px; object-fit:contain; object-position:center; background:#f2f2ef; }
+.studio-image img { height:720px; object-fit:contain; object-position:center; background:#fff; }
 .capabilities-grid { display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--line); }
 .capabilities-grid article { min-height:205px; padding:34px 26px; display:flex; flex-direction:column; }
 .capabilities-grid article:nth-child(odd) { border-right:1px solid var(--line); }
@@ -65,8 +66,10 @@ figcaption { margin-top:7px; color:#777; font:10px "Courier New",monospace; }
 .client-list p:last-child { color:#888; }
 .contact-statement { margin:0 0 68px; font-size:38px; line-height:1.04; letter-spacing:-.045em; }
 .contact-line { display:grid; grid-template-columns:1fr 2fr; padding:16px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.contact-line + .contact-line { border-top:0; }
 .contact-line span { color:#888; text-transform:uppercase; font-size:9px; }
-.contact-line a { font-size:17px; }
+.contact-line a,.contact-line address { font-size:17px; }
+.contact-line address { font-style:normal; }
 .contact-line a:hover { text-decoration:underline; }
 footer { margin-top:90px; border-top:1px solid var(--line); }
 footer>div { min-height:85px; display:flex; align-items:center; justify-content:space-between; }
